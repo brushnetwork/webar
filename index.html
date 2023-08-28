@@ -11,18 +11,17 @@
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
-            embedded
-            loading-screen="enabled: false;"
+            vr-mode-ui='enabled: false'
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
                 <a-image
                     src="assets/asset.jpeg"
                     look-at="[gps-camera]"
-                    scale="1 1 1"
-                    gps-entity-place="latitude: 10.694119392537543; longitude: 122.48156210574969;"
+                    scale="10 10 10"
+                    gps-new-entity-place="latitude: 10.694119392537543; longitude: 122.48156210574969;"
                 ></a-image>
 
-            <a-camera gps-camera rotation-reader></a-camera>
+            <a-camera gps-new-camera='gpsMinDistance: 5' rotation-reader></a-camera>
         </a-scene>
     </body>
 </html>
