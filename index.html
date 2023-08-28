@@ -13,6 +13,10 @@
     loading-screen="enabled: false;"
     arjs="sourceType: webcam; debugUIEnabled: false;"
   >
+    <a-assets>
+      <a-asset-item id="font" src="path-to-your-font-file.json"></a-asset-item>
+    </a-assets>
+
     <a-image
       src="assets/asset.jpeg"
       look-at="[gps-camera]"
@@ -25,7 +29,7 @@
 
     <a-entity
       id="distance-text"
-      text="align: center; anchor: center; width: 10; value: Distance: 0 meters; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt"
+      text="align: center; anchor: center; width: 10; color: white; borderColor: black; borderWidth: 5; value: Distance: 0 meters;"
       position="0 -2 -5"
       rotation="0 0 0"
     ></a-entity>
@@ -57,3 +61,4 @@
   </script>
 </body>
 </html>
+
