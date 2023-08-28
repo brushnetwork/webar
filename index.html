@@ -19,18 +19,11 @@
                     src="assets/asset.jpeg"
                     look-at="[gps-camera]"
                     scale="5 5 5"
+                    rotate="0 0 0"
                     gps-entity-place="latitude: 10.694119392537543; longitude: 122.48156210574969;"
                 ></a-image>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
-        <script>
-        var rot = cam.getAttribute('rotation');
-  marker.setAttribute('rotation', {
-    x: 0,
-    y: 0, 
-    z: 5
-  });
-        </script>
     </body>
 </html>
