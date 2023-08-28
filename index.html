@@ -24,6 +24,13 @@
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
-        
+        <script>
+        var rot = cam.getAttribute('rotation');
+  marker.setAttribute('rotation', {
+    x: 0,
+    y: rot.y, 
+    z: 0
+  });
+        </script>
     </body>
 </html>
